@@ -17,6 +17,8 @@ People who see one of Mark's projects sometimes wonder what "Crutastic" is. Befo
 - 2026-11-16: Form uses a Google script instead of a paid form service, so Mark gets an email and his address stays hidden. Mark chose email only, no sheet.
 - 2026-11-16: Footer verse: Colossians 3:23.
 
+- 2026-11-16: Welcome line starts "My name is Mark, and I serve with Cru." First name only is fine (Mark).
+
 ## Ideas for later
 - Show new notes in Home Base or Command Center.
 
