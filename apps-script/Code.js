@@ -40,7 +40,9 @@ function doGet() {
 
 // Run this once from the script editor to approve sending email.
 function setup() {
-  Logger.log('Ready. Notes will go to ' + Session.getEffectiveUser().getEmail());
+  // Touching MailApp here makes Google ask for the "send email" OK.
+  Logger.log('Ready. Notes will go to ' + Session.getEffectiveUser().getEmail() +
+    '. Emails left today: ' + MailApp.getRemainingDailyQuota());
 }
 
 function clip_(s, n) {
