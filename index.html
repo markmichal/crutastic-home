@@ -1,0 +1,180 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Crutastic</title>
+<meta name="description" content="A small home for the ways I'm learning to use AI in ministry.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,600&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --ink:#1d2433; --soft:#5b6475; --cream:#faf6f0; --card:#ffffff;
+    --dawn:#e8875a; --dawn-deep:#c9653a; --line:#e7e0d6;
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  body{background:var(--cream);color:var(--ink);font:17px/1.65 Inter,system-ui,sans-serif}
+  a{color:inherit}
+  .wrap{max-width:720px;margin:0 auto;padding:0 20px}
+
+  /* Hero */
+  .hero{position:relative;min-height:100svh;display:flex;align-items:flex-end;
+    background:url(img/hero.jpg) center 40%/cover no-repeat;color:#fff}
+  .hero::after{content:"";position:absolute;inset:0;
+    background:linear-gradient(180deg,rgba(15,20,32,.15) 0%,rgba(15,20,32,.05) 40%,rgba(15,20,32,.7) 100%)}
+  .hero .wrap{position:relative;z-index:1;padding-bottom:12vh}
+  .brand{font-size:13px;letter-spacing:.32em;text-transform:uppercase;font-weight:600;opacity:.9}
+  h1{font-family:Fraunces,Georgia,serif;font-weight:400;font-size:clamp(48px,9vw,96px);
+    line-height:1;margin:14px 0 18px;letter-spacing:-.01em}
+  .hero p{font-size:clamp(18px,2.4vw,22px);max-width:30ch;opacity:.95}
+  .scroll{display:inline-block;margin-top:34px;font-size:14px;text-decoration:none;
+    border-bottom:1px solid rgba(255,255,255,.6);padding-bottom:2px}
+
+  section{padding:88px 0}
+  h2{font-family:Fraunces,Georgia,serif;font-weight:600;font-size:clamp(28px,4vw,36px);
+    line-height:1.15;margin-bottom:18px}
+  .kicker{color:var(--dawn-deep);font-size:13px;letter-spacing:.2em;text-transform:uppercase;
+    font-weight:600;margin-bottom:10px}
+  .lead{font-size:20px;color:var(--ink)}
+  .lead + .lead{margin-top:14px}
+
+  /* Ways */
+  .ways{list-style:none;display:grid;grid-template-columns:1fr 1fr;gap:14px;margin-top:28px}
+  .ways li{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:18px 20px}
+  .ways b{display:block;font-weight:600;margin-bottom:4px}
+  .ways span{color:var(--soft);font-size:15px}
+  @media (max-width:600px){.ways{grid-template-columns:1fr}}
+
+  /* Made list, kept quiet */
+  .made{border-top:1px solid var(--line)}
+  .made ul{list-style:none;margin-top:8px}
+  .made li{border-bottom:1px solid var(--line)}
+  .made a{display:flex;justify-content:space-between;gap:16px;padding:14px 0;text-decoration:none}
+  .made a:hover .t{color:var(--dawn-deep)}
+  .made .t{font-weight:500}
+  .made .d{color:var(--soft);font-size:15px;text-align:right}
+
+  /* Form */
+  .hello{background:var(--ink);color:#fff}
+  .hello .kicker{color:var(--dawn)}
+  .hello p{color:#c9cfdb}
+  form{margin-top:28px;display:grid;gap:14px}
+  .row{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+  @media (max-width:600px){.row{grid-template-columns:1fr}}
+  label{font-size:14px;color:#c9cfdb;display:grid;gap:6px}
+  input,textarea{font:inherit;color:#fff;background:rgba(255,255,255,.06);
+    border:1px solid rgba(255,255,255,.18);border-radius:10px;padding:12px 14px}
+  input:focus,textarea:focus{outline:2px solid var(--dawn);outline-offset:1px}
+  textarea{min-height:130px;resize:vertical}
+  button{justify-self:start;font:600 16px Inter,sans-serif;color:var(--ink);background:var(--dawn);
+    border:0;border-radius:999px;padding:13px 26px;cursor:pointer}
+  button:hover{background:#f19a70}
+  .small{font-size:14px}
+  .thanks{display:none;margin-top:28px;font-family:Fraunces,serif;font-size:24px;color:#fff}
+
+  footer{padding:56px 0 64px;text-align:center;color:var(--soft)}
+  footer q{font-family:Fraunces,serif;font-size:20px;color:var(--ink);quotes:"\201C" "\201D"}
+  footer .ref{display:block;font-size:14px;margin-top:6px}
+  footer .tiny{font-size:13px;margin-top:28px}
+</style>
+</head>
+<body>
+
+<header class="hero">
+  <div class="wrap">
+    <div class="brand">Crutastic</div>
+    <h1>My AI<br>project space.</h1>
+    <p>A small corner of the web where I try new things with AI, and share what's working.</p>
+    <a class="scroll" href="#about">What is this place?</a>
+  </div>
+</header>
+
+<main>
+  <section id="about">
+    <div class="wrap">
+      <div class="kicker">Welcome</div>
+      <h2>If you landed here from one of my projects, you're in the right spot.</h2>
+      <p class="lead">I serve with Cru, and I'm learning how AI can help me do my work well, so more of my time goes to what matters.</p>
+      <p class="lead">Crutastic is simply where I keep the tools and pages I build along the way. Nothing fancy. Just a place to put good work so others can use it too.</p>
+    </div>
+  </section>
+
+  <section style="padding-top:0">
+    <div class="wrap">
+      <div class="kicker">Along the way</div>
+      <h2>A few ways I'm using AI</h2>
+      <ul class="ways">
+        <li><b>Turning hours into minutes</b><span>Monthly reports, filing and clean up that used to eat an afternoon.</span></li>
+        <li><b>Building simple websites</b><span>Pages that help ministry teams find what they need fast.</span></li>
+        <li><b>Making study tools</b><span>Flashcards and helpers that make learning stick.</span></li>
+        <li><b>Telling stories well</b><span>Captions, transcripts and videos that share what God is doing.</span></li>
+        <li><b>Apps made just for me</b><span>Small phone apps that fit how I actually work.</span></li>
+        <li><b>Thinking out loud</b><span>A patient partner for planning, writing and new ideas.</span></li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="made" style="padding-top:64px">
+    <div class="wrap">
+      <div class="kicker">If you're curious</div>
+      <h2 style="font-size:24px">A few things I've made</h2>
+      <ul>
+        <li><a href="https://flashcards.crutastic.com"><span class="t">Flashcards</span><span class="d">A study app that helps you remember</span></a></li>
+        <li><a href="https://mpf.crutastic.com"><span class="t">Ministry Product Framework</span><span class="d">From a hunch to a helpful tool</span></a></li>
+        <li><a href="https://highschoollegacy.crutastic.com"><span class="t">Cru High School Legacy</span><span class="d">Sixty years of stories</span></a></li>
+        <li><a href="https://sounds.crutastic.com"><span class="t">Sound Machine</span><span class="d">Applause, drumrolls and more</span></a></li>
+        <li><a href="https://markmichal.github.io/caption-cleanup/"><span class="t">Caption Cleanup</span><span class="d">Tidies up video captions</span></a></li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="hello" id="hello">
+    <div class="wrap">
+      <div class="kicker">Say hello</div>
+      <h2>Have a question, or want to connect?</h2>
+      <p>Leave your email and a short note. It comes straight to me, and I'd love to get back to you.</p>
+      <form id="f">
+        <div class="row">
+          <label>Your name<input name="name" autocomplete="name" required></label>
+          <label>Your email<input name="email" type="email" autocomplete="email" required></label>
+        </div>
+        <label>Your note<textarea name="message" maxlength="4000" required></textarea></label>
+        <input name="website" tabindex="-1" autocomplete="off" aria-hidden="true" style="position:absolute;left:-9999px">
+        <button type="submit">Send note</button>
+        <p class="small">I'll only use your email to write you back.</p>
+      </form>
+      <div class="thanks" id="thanks">Thanks! Your note is on its way. Talk soon.</div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <q>Whatever you do, work at it with all your heart.</q>
+    <span class="ref">Colossians 3:23</span>
+    <p class="tiny">Crutastic &middot; a personal project &middot; not an official Cru site</p>
+  </div>
+</footer>
+
+<script>
+  // Notes go to a Google script that saves them in a sheet and emails Mark.
+  // The script answers with a redirect browsers won't let us read, so we
+  // send it "no-cors" and show thanks once the send itself goes through.
+  const FORM_URL = 'https://script.google.com/macros/s/AKfycbz2V_ejXYjWz2vMqAqKqFtpLQUvgYDNgAHsi1DZKdRJK1Ug2bInt9f089Kf5q-9DtpD/exec';
+  const form = document.getElementById('f');
+  form.addEventListener('submit', async e => {
+    e.preventDefault();
+    const btn = form.querySelector('button');
+    btn.disabled = true; btn.textContent = 'Sending...';
+    try {
+      await fetch(FORM_URL, { method: 'POST', mode: 'no-cors', body: new URLSearchParams(new FormData(form)) });
+      form.style.display = 'none';
+      document.getElementById('thanks').style.display = 'block';
+    } catch (err) {
+      btn.disabled = false; btn.textContent = 'Send note';
+      alert('Sorry, that did not go through. Please try again in a minute.');
+    }
+  });
+</script>
+</body>
+</html>

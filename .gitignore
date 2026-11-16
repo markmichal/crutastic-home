@@ -1,0 +1,6 @@
+.DS_Store
+# Secrets never go in this public repo
+.env*
+*credentials*.json
+# Readable chat copies stay on this Mac
+chats/
