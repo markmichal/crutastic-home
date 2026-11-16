@@ -8,13 +8,13 @@ People who see one of Mark's projects sometimes wonder what "Crutastic" is. Befo
 ## How it works
 - `index.html` is the whole page. `img/hero.jpg` is the mountain sunrise photo (free Unsplash photo).
 - Hosted on GitHub Pages from the `main` branch.
-- The "Say hello" form sends to a Google Apps Script (`apps-script/Code.js`). It saves each note in a Google Sheet called "Crutastic notes" (in App Parts (don't touch) > Crutastic) and emails Mark, with Reply set to the visitor.
+- The "Say hello" form sends to a Google Apps Script (`apps-script/Code.js`) owned by Mark's Cru Google account. It emails each note to Mark, with Reply set to the visitor. Nothing else is saved.
 - Spam guards: a hidden box bots fill in, and at most 30 notes an hour.
 
 ## Decisions
 - 2026-11-16: Headline is "My AI project space." Mark didn't like "busywork"; welcome line ends "so more of my time goes to what matters."
 - 2026-11-16: Projects listed: Flashcards, Ministry Product Framework, Cru High School Legacy, Sound Machine, Caption Cleanup. Left out the sensitive ones (see AGENTS.md).
-- 2026-11-16: Form uses a Google script plus Sheet instead of a paid form service, so Mark gets an email and his address stays hidden.
+- 2026-11-16: Form uses a Google script instead of a paid form service, so Mark gets an email and his address stays hidden. Mark chose email only, no sheet.
 - 2026-11-16: Footer verse: Colossians 3:23.
 
 ## Ideas for later
