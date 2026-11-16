@@ -7,7 +7,7 @@ The simple welcome page at crutastic.com. Read README.md next. Mark is not a cod
 - Keep the page simple and low key. It is a "what is this place?" page, not a portfolio.
 - Never list or link these here: the projects hub, Design Templates, Thrive Instagram, GTTC revamp, LaunchWeek, the Cru Store dashboard, or any demo page that links back to the hub (Home Base, Slideshow Creator, Theme Lab). Before adding a project, check its page has no link to projects.crutastic.com.
 - The form posts to the Google script in `apps-script/`. After changing Code.js: `clasp push --force`, then `clasp update-deployment <id from index.html> -d "Crutastic form"` so the web address stays the same.
-- crutastic.com DNS is run by Cru DevOps (Terraform, via Mike Albert), not GoDaddy.
+- crutastic.com DNS is run by Cru DevOps, not GoDaddy. Requests go as a new email to their team address (see Mark's main rules, "Emailing Cru DevOps").
 
 ## End of session
 Follow ~/AI Projects/AGENTS.md.
