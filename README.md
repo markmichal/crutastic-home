@@ -24,4 +24,4 @@ People who see one of Mark's projects sometimes wonder what "Crutastic" is. Befo
 
 ## History
 - 2026-11-16: Built the page and form.
-- 2026-11-17: Added crutastic.com as the custom domain in GitHub Pages (DevOps asked for this first). Waiting on DevOps to switch the DNS, then turn on Enforce HTTPS.
+- 2026-11-17: crutastic.com is live. Added the custom domain in GitHub Pages, DevOps switched the DNS, Enforce HTTPS is on. Tip: if the certificate is slow to start, remove and re-save the custom domain.
